@@ -1,0 +1,142 @@
+<h1 id="low-fidelity-prototype">Low-Fidelity Prototype</h1>
+
+<p><img src="http://i.imgur.com/aFOAHFY.jpg" title="Hosted by imgur.com"></p>
+
+<h2 id="main-tasks">Main Tasks</h2>
+
+<ul>
+<li><p>Choose a song</p></li>
+<li><p>Play/Pause a song</p></li>
+<li><p>Change the volume of a song</p></li>
+<li><p>Mix 2 songs seamlessly</p></li>
+<li><p>Add Effects to a song</p></li>
+<li><p>Filter out frequencies in a song</p></li>
+<li><p>Hear a song in the headphones</p></li>
+<li><p>Loop inside a song</p></li>
+<li><p>Skip chunks of a song seamlessly</p></li>
+<li><p>Jog through the song</p></li>
+<li><p>Record any part of the set</p></li>
+</ul>
+
+<p><br></p>
+
+
+
+<h2 id="design-decisions">Design Decisions</h2>
+
+
+
+<h3 id="main-design">Main Design</h3>
+
+<p>We decided to group all the desired functions into independent logical groups, or units. This way the user will be able to learn  The functions in each unit all have similar behaviour on the system. The units are: </p>
+
+<ol>
+<li>Volume/Cue Control Unit (x2)</li>
+<li>Library Browser Unit</li>
+<li>FX Unit (x2)</li>
+<li>Filter Unit (x2)</li>
+<li>Looping Unit (x2)</li>
+<li>Beat Jumping Unit (x2)</li>
+<li>Transport Unit (x2)</li>
+<li>Recording Unit</li>
+</ol>
+
+<p><img src="http://i.imgur.com/aFOAHFY.jpg" title="Hosted by imgur.com"> Fig. 1 - Main Design</p>
+
+<h3 id="volumecue-control-unit">Volume/Cue Control Unit</h3>
+
+<p>Placed in the middle because it includes the cross-fader, which is used to mix between the left and right deck. The fader being in the middle is therefore the most intuitive positioning.</p>
+
+<p>Volume Control: A slider implemented using two superimposed pieces of cardboard. The smaller piece is a different colour for contrast and it is moveable up and down the bigger piece. Placed vertically to represent intensity.</p>
+
+<p>Cross Fader: Same implementation as the volume control, but placed horizontally to easily visually represent the left and right deck.</p>
+
+<p>Cue Buttons: Implemented using white cardboard with pictures of headphones on them so that the function is obvious. </p>
+
+<p>Cue Mixer: Implemented the same way as the volume control and the cross fader. This mixes what is being heard in the headphones and what is being heard from the speakers (both can be L/R). Drawings placed so that user does not get confused with L/R mixing (cross-fader). Also, placed near the cue buttons for better visual aid.</p>
+
+<p><img src="http://i.imgur.com/ZYsYVFp.jpg" title="Hosted by imgur.com"> Fig. 2 - Volume/Cue Control Unit</p>
+
+<p>“Mixing” VIDEO</p>
+
+<h3 id="library-browser-unit">Library Browser Unit</h3>
+
+<p>The unit is placed on the right side because most people are right-handed, so they will likely use their right hand to choose a song. </p>
+
+<p>Library Toggle Button: Used to toggle the music library view on the computer software. Implemented using a big green cap so that it’s very easy to see. </p>
+
+<p>Folder Select Knob: Used to scroll through and select folders. Folder symbol included.</p>
+
+<p>Song Select Knob: Used to scroll through songs. This is bigger than the folder knob because it will likely need to scroll through longer lists.</p>
+
+<p>Left and Right Buttons: Used to load the selected song into the left or right deck.</p>
+
+<p><a href="http://imgur.com/Z3vDhWH"><img src="http://i.imgur.com/Z3vDhWH.jpg" title="Hosted by imgur.com"></a> Fig. 3 - Library Browser Unit</p>
+
+<p>“Library Browser” VIDEO</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/1dl6viT1Pw4" frameborder="0" allowfullscreen></iframe>
+
+
+<h3 id="fx-unit">FX Unit</h3>
+
+<p>FX Volume Control Knob: Used to control how much of the effect will be heard. This type of knob does not do full rotations (has a min and max) and is implemented the same way on the whole prototype controller.</p>
+
+<p>FX Select Knob: Used to toggle the FX menu in the computer software, scroll through the list, and load an effect into one of the 3 positions.</p>
+
+<p>Position Select Buttons (1,2,3): Used to select which position the effect will be loaded to.</p>
+
+<p>Intensity Control Knobs (x3): Control the intensity of the effect.</p>
+
+<p>Enable Buttons (x3): Toggle whether the effect is being applied or not. This type of button is implemented in the same way on the whole prototype controller.</p>
+
+<p><img src="http://i.imgur.com/e26FTZu.jpg" title="Hosted by imgur.com">Fig. 4 - FX Unit <br>
+*There is a mistake in this drawing; One of the numbers (1,2, or 3) should always be lit. This is shown in the video.</p>
+
+<p>“Effect” VIDEO</p>
+
+<h3 id="filter-unit">Filter Unit</h3>
+
+<p>Includes 4 knobs and buttons to control filtering.</p>
+
+<p><img src="http://i.imgur.com/bTAM0jr.jpg" title="Hosted by imgur.com"> Fig. 5 - Filter Unit</p>
+
+<h3 id="looping-unit">Looping Unit</h3>
+
+<p>Buttons used to loop the previous or next 4/8/16/32 beats. </p>
+
+<p><img src="http://i.imgur.com/Rfe3k3L.jpg" title="Hosted by imgur.com"> Fig. 6 - Looping Unit</p>
+
+<p>“Looping” VIDEO</p>
+
+<h3 id="beat-jumping-unit">Beat Jumping Unit</h3>
+
+<p>Buttons used to jump 4/8/16/32 beats forward or backward. </p>
+
+<p><img src="http://i.imgur.com/6h9rdHq.jpg" title="Hosted by imgur.com"> Fig. 7 - Beat Jumping Unit</p>
+
+<p>“Beat Jump” VIDEO</p>
+
+<h3 id="transport-unit">Transport Unit</h3>
+
+<p>Play button: Lit when on. When off, the song is paused.</p>
+
+<p>Jogging strip: Strip that will be used by sliding your fingers across to jog through a track.</p>
+
+<p><img src="http://i.imgur.com/0JI0wBU.jpg" title="Hosted by imgur.com"> Fig. 8 - Jogging Unit</p>
+
+<p><img src="http://i.imgur.com/poe6mf2.jpg" title="Hosted by imgur.com"> Fig. 9 - Jogging Example</p>
+
+<h3 id="recording">Recording</h3>
+
+<p><img src="http://i.imgur.com/fJ3li2s.jpg" title="Hosted by imgur.com"> Fig. 10 - Recording Unit (Off)</p>
+
+<p><img src="http://i.imgur.com/B7GqemP.jpg" title="Hosted by imgur.com"> Fig. 11 - Recording Unit (On)</p>
+
+<h2 id="high-level-goals">High-Level Goals</h2>
+
+<p>The 2 essential goals and “raison d’être” of Hcidj are <strong>learnability</strong> and <strong>simplicity</strong>. These two qualities have been our motivation since the beginning and they drive us throughout the whole design process. This is why we have decided to make certain design decisions about our prototype. </p>
+
+<p>For example, separating the functions into groups allows the user to first identify to a group or section when learning a task, and then learning the task itself. Having a few groups instead of a lot of buttons to choose from, one can learn more functions faster. </p>
+
+<p>We kept the design simple by omitting some functionalities that we thought are too advanced for beginners and unnecessary to include, such as tempo control. We also integrated other functionalities into our system without putting controls for them on the controller, such as automatic track synchronization. </p>
