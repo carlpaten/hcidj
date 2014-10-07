@@ -1,0 +1,4 @@
+hcidj
+=====
+
+HCI semester project
