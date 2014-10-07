@@ -1,0 +1,293 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Hcidj</title>
+  <meta name="description" content="HCI semester project">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Hcidj</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">HCI semester project</p>
+      <p class="tagline">
+      Home - 
+      <a href="homework.html">Homework</a> - 
+      <a href="lf-proto.html">Low-fidelity Prototype</a>
+      </p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/lilred/hcidj/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/lilred/hcidj/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/lilred/hcidj" class="code">View Hcidj on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        
+        <article class="markdown-body">
+          
+<h1 id="project-proposal">Project Proposal</h1>
+
+
+<h2 id="table-of-contents">Table of contents</h2>
+
+<p><div class="toc"><div class="toc">
+<ul>
+<li><a href="#project-proposal">Project Proposal</a><ul>
+<li><a href="#table-of-contents">Table of contents</a></li>
+<li><a href="#project-overview">Project Overview</a></li>
+<li><a href="#personas">Personas</a></li>
+<li><a href="#use-case-scenarios">Use Case Scenarios</a><ul>
+<li><a href="#scenario-1-user-prepares-to-mix">Scenario 1: User prepares to mix</a></li>
+<li><a href="#scenario-2-user-selects-a-song">Scenario 2: User selects a song</a></li>
+<li><a href="#scenario-3-user-wants-to-listen-to-one-of-the-songs-in-his-headphones">Scenario 3: User wants to listen to one of the songs in his headphones</a></li>
+<li><a href="#scenario-3-user-segues-between-two-songs">Scenario 3: User segues between two songs</a></li>
+<li><a href="#scenario-4-user-adds-effects-to-a-song">Scenario 4: User adds effects to a song</a></li>
+<li><a href="#scenario-5-user-adds-a-sound-sample-over-the-song">Scenario 5: User adds a sound sample over the song</a></li>
+<li><a href="#scenario-6-user-wants-to-loop-a-part-of-a-song">Scenario 6: User wants to loop a part of a song</a></li>
+<li><a href="#scenario-7-user-fulfills-a-music-request-from-a-member-of-the-crowd-hes-performing-for">Scenario 7: User fulfills a music request from a member of the crowd he’s performing for</a></li>
+</ul>
+</li>
+<li><a href="#related-products">Related Products</a><ul>
+<li><a href="#hercules-rmx">Hercules RMX</a></li>
+<li><a href="#numark-nv">Numark NV</a></li>
+</ul>
+</li>
+<li><a href="#product-comparison">Product Comparison</a></li>
+<li><a href="#high-level-design">High-Level Design</a></li>
+<li><a href="#justification">Justification</a></li>
+<li><a href="#summary-of-contributions">Summary of Contributions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</p>
+
+<h2 id="project-overview">Project Overview</h2>
+
+<p>HCIDJ provides an easy way to learn how to DJ, with minimal interaction with DJ software. It is a controller with basic DJ capabilities and a simple user interface that is not intimidating and complicated like most controllers. </p>
+
+
+
+<h2 id="personas">Personas</h2>
+
+<p><strong>Jason</strong></p>
+
+<div style="text-align: center;"><img src="http://i.imgur.com/AOy7hQW.jpg" title="Hosted by imgur.com"/></div>
+
+<blockquote>
+  <p><strong>Age:</strong> 22</p>
+  
+  <p><strong>Personality:</strong> Easygoing, chilled, friendly</p>
+  
+  <p><strong>Background:</strong> Jason has been really into electronic music for a while. He has been to many clubs,  concerts and festivals where some kind of electronic music was being played, so he knows quite a bit about the different sub-genres crowds. </p>
+  
+  <p><strong>Problem:</strong> Jason has found himself in the situation where he is at someone’s house for a party or an after-party, and there is no DJ controlling the music; it is just someone’s iPod plugged into a sound system. </p>
+  
+  <p><strong>Motivation/Needs:</strong> Jason wants to learn how to mix so that he can provide a richer musical experience for himself and his friends at house parties or other social gatherings such as after-parties or just hanging out with a few friends. Jason needs a way to learn all the basics of DJing, without wanting to invest too much time or effort.</p>
+</blockquote>
+
+<p><strong>Peter</strong></p>
+
+<div style="text-align: center;"><img src="http://i.imgur.com/4tBXTBU.png" title="Hosted by imgur.com"/></div>
+
+<blockquote>
+  <p><strong>Age:</strong> 17</p>
+  
+  <p><strong>Personality:</strong> Outgoing, talkative, high energy</p>
+  
+  <p><strong>Background:</strong> Peter is a teenage boy who is starting to go to outings and parties with his friends. He got into electronic music very recently. He is very excited about this huge “movement” and wants to be a part of it. He saw video clips of famous DJs at big festivals and was amazed with how popular and loved they are. He decided that he wants to be like them so he wants to become a DJ. </p>
+  
+  <p><strong>Problem:</strong> Peter has very little or no knowledge of electronic music and DJing. All the DJ tools available to him are too complicated to learn (controllers and software).  </p>
+  
+  <p><strong>Motivation/Needs:</strong> At parties and when he hangs out with buddies, Peter always wants to play popular songs and have his friends show him positive feedback about the song choice. Peter needs an easy way to cross-fade songs, and add some special effects. Peter needs a way to DJ that uses a minimal user interface, and that has minimal interaction with DJ software.</p>
+</blockquote>
+
+<h2 id="use-case-scenarios">Use Case Scenarios</h2>
+
+
+
+<h3 id="scenario-1-user-prepares-to-mix">Scenario 1: User prepares to mix</h3>
+
+<p>The user prepares a laptop with his choice of DJ software and music. He brings the laptop, headphones and the HCIDJ controller to the place (house or otherwise) where he’ll be mixing. There is some assembly required; a speaker system (provided by the house) must be connected to the controller, along with the laptop and headphones the user brought with him. The user turns his laptop on and starts the music software, bringing up the mixing interface. At this point, the user is ready to load a song and press play, thus starting his music performance.</p>
+
+
+
+<h3 id="scenario-2-user-selects-a-song">Scenario 2: User selects a song</h3>
+
+<p>The user is looking for a song to play next. He hits the “search music” button on the HCIDJ controller; the interface on the laptop instantly changes from a mixing display to an overview of his music library. He can browse the songs using a knob on the HCIDJ to scroll up or down, or he can enter the name of a song to pull it up. (This is made possible by the standardized music library interface on popular DJing software.)</p>
+
+
+
+<h3 id="scenario-3-user-wants-to-listen-to-one-of-the-songs-in-his-headphones">Scenario 3: User wants to listen to one of the songs in his headphones</h3>
+
+<p>The user presses the “cue” button on the HCIDJ controller (which will have a picture of headphones on it). There will be one on each side, for each track. There will be a light indicating when each one is on.</p>
+
+
+
+<h3 id="scenario-3-user-segues-between-two-songs">Scenario 3: User segues between two songs</h3>
+
+<p>The currently playing song is soon coming to an end, so the user selects a second song and presses “play”. He can quickly verify that it will not immediately play on the public-facing sound system by looking at the position of a big slider control (the “cross-fader”). He can then synchronize it with the song that is currently playing by hitting the “sync” button. The software takes care of the rest; given two songs with compatible tempos, beat patterns and optionally keys, the result is seamless. (Such a selection of songs is easily made by chaining together generic pop songs.) The user can now unmute the song by moving the cross-fader from one side to the other. Optionally, by completing the movement of the cross-fader, the previously playing song can be muted.</p>
+
+
+
+<h3 id="scenario-4-user-adds-effects-to-a-song">Scenario 4: User adds effects to a song</h3>
+
+<p>Sometimes, a user wants to alter the music by adding sound effects  (such as frequency filtering or reverberation). He controls the intensity of the sound effect using a control with high feedback (to be decided at a later stage of the design - options include sliders, knobs, pressure bands). Effects are turned on or off using a button or toggle switch; the current state of the effect (on or off) is visually evident, through either the physical state of the control or a LED close to it.</p>
+
+
+
+<h3 id="scenario-5-user-adds-a-sound-sample-over-the-song">Scenario 5: User adds a sound sample over the song</h3>
+
+<p>The user wants to play a specific sound over the song. This sound may be something like a horn, which is pre-loaded in his music library, or a small part of the song that’s currently playing (in the speakers or in his headphones). There will be a button to play back this sample and a button to record on it. There will be a 3 option switch to choose to record from the library, the headphones, or the speakers (there will be pictures to make it obvious).</p>
+
+
+
+<h3 id="scenario-6-user-wants-to-loop-a-part-of-a-song">Scenario 6: User wants to loop a part of a song</h3>
+
+<p>The user wants to take a part of a song and loop it over and over, until he wants to stop. The controller interface will have a row of “loop” buttons that light up, each with a different number on it, corresponding to number of measures to loop. Only one can be lit at a time, and can be turned off by being pressed again.</p>
+
+
+
+<h3 id="scenario-7-user-fulfills-a-music-request-from-a-member-of-the-crowd-hes-performing-for">Scenario 7: User fulfills a music request from a member of the crowd he’s performing for</h3>
+
+<p>Parties are a great way to mingle with fun people while dancing to or listening to music one likes. Sometimes, a member of the crowd will request to hear a song that is particularly close to his heart; if the user wishes to entertain this request, he can demand that the requester pull up the song on his smartphone. Once the song is ready to be played, the phone’s audio output is connected to the HCIDJ controller, and it can be mixed just as if it were playing from the user’s music collection.</p>
+
+
+
+<h2 id="related-products">Related Products</h2>
+
+
+
+<h3 id="hercules-rmx">Hercules RMX</h3>
+
+<p>The market for entry-level DJ instruments is nearly saturated with offerings of all shapes and sizes. The enthusiast with a bit of pocket money can get almost professional-grade equipment, some of which has been iterated upon tirelessly for years.</p>
+
+<p>One of the fiercest contenders in this market segment is the Hercules RMX console. By necessity, it shares many features with our proposed design, the same way most cars share the concept of four wheels and a steering wheel.</p>
+
+<p>The Hercules RMX DJ controller is a powerful tool; however, it is not as intuitive as it should be:</p>
+
+<a href="http://imgur.com/mP6yY1z"><img src="http://i.imgur.com/mP6yY1z.png" title="Hosted by imgur.com"/></a>
+
+<ul>
+<li><p>At a glance, the buttons don’t follow logical groupings.</p>
+
+<ul><li>There are three vertical sliders in the middle of the tool; the center one does not serve the same purpose as the two on its sides.</li>
+<li>The “cue” button (bottom left and right) has nothing to do with the “play” and “stop” buttons it is grouped with.</li>
+<li>The top left and top right of the interface look similar, which suggests that they serve similar purposes; they don’t. The left side controls microphone input, while the right side controls monitoring.</li>
+<li>The “balance” button (top middle) looks like it belongs with the columns of three buttons on either side (the “equalizers”), but it serves fundamentally different purposes.</li>
+<li>The two inputs each connect to one logical half of the controller, so there should be one on each side, but instead they’re both on the same side and it’s not clear which is which.</li></ul></li>
+<li><p>Some of the buttons don’t serve any obvious purpose.</p>
+
+<ul><li>The two groups of buttons labeled with numbers from one through six don’t clearly map to any purpose. (Indeed, they are meant to be customized by the user.)</li>
+<li>The directional buttons in the middle serve no obvious purpose. From contextual clues, we can derive that they are supposed to be used to browse the music library, however they are fundamentally inadequate for this purpose.</li>
+<li>The “cue”, “cue select” and “gain” button labels are unclear to anyone who isn’t a domain expert; similarly with the arrow pictograms (middle left and middle right).</li>
+<li>The “balance” knob and the “scratch” button act relatively intuitively on the system, however they are not part of any likely user scenarios.</li></ul></li>
+<li><p>It is not clear how to use the inputs on the back.</p></li>
+</ul>
+
+
+
+<h3 id="numark-nv">Numark NV</h3>
+
+<a href="http://imgur.com/eEnURvM"><img src="http://i.imgur.com/eEnURvM.png" title="Hosted by imgur.com"/></a>
+
+<p>This is a similar semi-professional DJ controller; note how cluttered the interface feels. Also note how the button banks on the bottom left and right are void of labels, and full of colors that don’t actually contribute to the user’s intuition of the system.</p>
+
+<p>Furthermore, looking at the four by four grid of knobs in the middle of the platform, the top knobs in the grid serve a fundamentally different role than the others, even if they are logically grouped together.</p>
+
+<p>The FX1, FX2, FX3… buttons (right under either screens) are too close to their knobs, and stick out; a user could accidentally hit one of those buttons while turning a knob.</p>
+
+
+
+<h2 id="product-comparison">Product Comparison</h2>
+
+<p>We attempt to design a DJ interface that provides consistent, logical groupings of controls; that provides valuable, instantaneous feedback to the user; and which evades awkwardness for every frequent use case.</p>
+
+<p>In particular:</p>
+
+<ul>
+<li>Every conceptual component of the system (crossfader, library browsing, loop control…) is to be logically grouped, and visually separate from other logical groups.</li>
+<li>Controls which are likely to be used together are to be sufficiently far apart that they can be used by both hands at once without awkwardness.</li>
+<li>The library browsing interface is to be made clear and intuitive, and entirely separate from the rest of the interface in order to provide a significant level of separation of concerns.</li>
+<li>Intuitive labels are to adorn the buttons, including pictograms where relevant.</li>
+</ul>
+
+
+
+<h2 id="high-level-design">High-Level Design</h2>
+
+<p>The DJ controller connects to a laptop with standard DJ software pre-installed. It sends commands through a USB hub as a function of its controls (buttons, sliders, knobs …). Standard protocols and interfaces, mainly USB MIDI and USB Audio Class, are used for communications. The controller can audio from input from an external source, e.g. smartphone or iPod.</p>
+
+<a href="http://imgur.com/yWqaqv0"><img src="http://i.imgur.com/yWqaqv0.jpg" title="Hosted by imgur.com"/></a>
+
+
+<h2 id="justification">Justification</h2>
+
+<p>Software-wise, this project isn’t very complicated; it solely consists of using a microcontroller to map sensors and outputs to USB-MIDI channels, and then using domain-specific tools to map those channels to DJ software functionality.</p>
+
+<p>The difficulty comes in designing an intuitive interface; we will need to find a way to iterate enough times on the design that we end Feasibility up with something highly usable. </p>
+
+<p>There are particular logistical challenges, such as the sourcing of the different components and the building of the chassis. Fortunately, we live in the age of do-it-yourself, and certain companies cater specifically to hardware hackers such as us.</p>
+
+<p>We already put a large amount of effort into doing research on sensors and outputs, to figure out what is feasible; from now on, we expect the effort is going to split approximately equally into design and usability research.</p>
+
+<p>The main challenge we are facing is that ordering parts takes a long time, so we need to plan ahead and give ourselves some breathing space in terms of how many components we order.</p>
+
+
+
+<h2 id="summary-of-contributions">Summary of Contributions</h2>
+
+<p><strong>Project Overview:</strong> authored by Voula <br>
+<strong>Personas:</strong> authored by Voula and Carl <br>
+<strong>Use Case Scenarios:</strong> authored by Voula, Carl and Yamen <br>
+<strong>Related Products:</strong> authored by Carl and Yamen <br>
+<strong>Product Comparison:</strong> authored by Carl and Yamen <br>
+<strong>High Level Design:</strong> authored by Carl, Voula and Yamen <br>
+<strong>Feasibility Justification:</strong> authored by Carl</p>
+
+<p>Research on components was done by Carl and validated by Voula and Yamen; website publication was done by Carl and Yamen.</p>
+
+<p>A lot of intangible design discussion and research went into finding a direction for the project; within that context, every team member made equally valuable contribution.</p>
+
+          
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/lilred" class="avatar"><img src="https://avatars0.githubusercontent.com/u/1834919?v=2&amp;s=60" width="48" height="48"></a> <a href="https://github.com/lilred">lilred</a> maintains <a href="https://github.com/lilred/hcidj">Hcidj</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/lilred/hcidj/tarball/master" class="tar">tar</a><a href="https://github.com/lilred/hcidj/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>

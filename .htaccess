@@ -1,0 +1,5 @@
+AuthUserFile /home/2012/cpaten2/hci/.htpasswd
+AuthGroupFile /dev/null
+AuthType Basic
+AuthName "HCI Project access restricted"
+require valid-user
