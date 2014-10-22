@@ -1,0 +1,4 @@
+- Fix screw hole size for pressure strip
+- Fix screw alignment large slider
+- Space out knobs and buttons
+- Increase area for button grids (too tight)
