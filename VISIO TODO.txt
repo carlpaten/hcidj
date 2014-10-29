@@ -1,5 +1,22 @@
 - Fix screw hole size for pressure strip
+- Cut backing piece for pressure strip
+- Widen holes for pressure strip
+
 - Fix screw alignment large slider
+- Shorten large slider hole
+- Fix lines on all sliders
+- Adjust slider width to fit knob
+- Triple-check screw hole sizes
+
 - Space out knobs and buttons
-- Increase area for button grids (too tight)
-- Widen the holes for the touch strips
+- Lines for knobs
+
+- Increase holes for small button grids (too tight)
+- Move labels to sides of buttons
+
+- Get measurements for LED sticks
+- Cut big square PCB at workshop
+- Figure out screw lengths and washers (make a BOM)
+
+MISSING PARTS
+- 74HC595 for multiplexing LEDs
