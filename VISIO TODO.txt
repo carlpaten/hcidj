@@ -1,3 +1,9 @@
+- Add recording and battery
+- Get diffused LEDs for square buttons
+- Place screw holes for chassis
+- Improve labelling for load buttons
+- Separate out encoders for music selection
+
 - Fix screw hole size for pressure strip
 - Cut backing piece for pressure strip
 - Widen holes for pressure strip
@@ -7,6 +13,7 @@
 - Fix lines on all sliders
 - Adjust slider width to fit knob
 - Triple-check screw hole sizes
+- Switch out LO/MID/HI for BASS/MID/TREBLE
 
 - Space out knobs and buttons
 - Lines for knobs
