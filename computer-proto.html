@@ -1,0 +1,216 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Hcidj</title>
+  <meta name="description" content="HCI semester project">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Hcidj</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">HCI semester project</p>
+      <p class="tagline">
+      <a href="index.html">Home</a> - 
+      <a href="homework.html">Homework</a> - 
+      <a href="lf-proto.html">Low-fidelity Prototype</a> - 
+     <a href="user-testing.html">User Testing</a> - 
+     Computer Prototype - 
+	 <a href="formative-feedback.html">Formative Feedback</a>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/lilred/hcidj/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/lilred/hcidj/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/lilred/hcidj" class="code">View Hcidj on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        
+        <article class="markdown-body">
+
+	<h1 id="computer-prototype">Computer Prototype</h1>
+	
+	<div style="text-align: center;"><img src="http://i.imgur.com/PhuoKjq.jpg?1" title="source: imgur.com" />
+		Figure 1. High-fidelity prototype of HCIDJ
+	</div>
+	
+
+<p>A lot has changed about our design since the beginning of the project, including hardware component choices and layout design. Since the lo-fidelity prototype, we have made the following changes:</p>
+
+<ul>
+<li><p>FX unit layout: The usage of the effects hasn’t changed since the lo-fidelity prototype, but the FX selection has changed. We decided to align the 1,2,3 select buttons with the 3 knobs and buttons, because it is more obvious for the user to visualize right away which knob the effect is being loaded to.</p></li>
+<li><p>Grouping filter with FX: Filtering is an effect itself so it makes sense for it to be with the rest of the FX. Also, in the lo-fi prototype, the Filter was next to the EQ and this was confusing.</p></li>
+<li><p>EQ hardware choice: We decided the change from knob+button (like the FX) to sliders, because we did not want different functions to use the same hardware components to avoid confusion. This way, since they’re visually different, the user knows right away that the functions are different (knobs = FX and mini-sliders = EQ). Sliders communicate the nature of the equalization just as well as knobs do (middle is normal, top amplifies the frequency, and bottom attenuates it). </p></li>
+<li><p>Cueing:  We decided to isolate the cueing functions because in the first usability evaluation, where the cueing functions were bundled with the volume, their positioning and functionality were confusing. By isolating cueing it is clear to the user that it is a section dedicated to using their headphones. We also brought the cueing section closer to the user (it is the lowest middle section). This is intuitive because it is the only section that doesn’t affect what is being played on the speakers (close buttons are only for “me”, and all other - further - buttons are for everyone else)</p></li>
+</ul>
+
+
+
+<h2 id="critical-parts-implemented-at-this-stage">Critical parts implemented at this stage:</h2>
+
+<p>Full layout with real hardware components: this was the most critical part for us because basically any functions can be simulated using the software, but if the right layout is not there it can not be simulated. In case a section or a function is hard or confusing to find or use, we want to know at this stage so that we can correct it for the final version. We also want to know if the way we anticipated the users to use certain components was wrong. </p>
+
+<ul>
+<li><p>Library: this is important because it’s needed to start a set, and it is probably what will be used the most</p></li>
+<li><p>Crossfader: this is important because it provides basic mixing and fading functionality, which is probably what will be used the most after the library.</p></li>
+<li><p>Left Side - Play button, FX and EQ: The play button is important because it allows the user to actually play a song to be heard. The FX and EQ sections are important for now because we want to determine whether the hardware choices are right and if the user will intuitively know how to use them. We want to encourage the test subject to use these functions a lot, and having Wizard of Oz for them wouldn’t allow that to happen optimally. Only one side is needed because the other side will be the exact same.</p></li>
+</ul>
+
+
+
+<h2 id="functionalities-not-implemented-at-this-stage">Functionalities not implemented at this stage:</h2>
+
+<ul>
+<li><p>Jump, Loop: We judged that these functions are fairly simple to use, easy to simulate, and nothing else depends on them, so they weren’t crucial to implement. If they’re not as easy to use as we thought, the test tasks and wizard of oz are enough to determine this.</p></li>
+<li><p>Rotary Encoders: the necessary hardware components have not arrived yet. This affects the Library navigation and FX select. The Library navigation will be simulated using Wizard of Oz techniques. However FX Select will not be tested, because even with proper Wizard of Oz techniques, the user will not understand that one of the 3 select buttons is always lit up (indicating which knob to load an effect to), so the related tasks would therefore probably fail. </p></li>
+<li><p>Cueing: we haven’t received the external sound card yet, which is what is used to connect the headphones as a second sound output. </p></li>
+<li><p>Jogging Strip: We accidentally burned the strips during the building process and were not able to get new ones in time.</p></li>
+<li><p>LEDs</p></li>
+</ul>
+
+<hr>
+
+<h2 id="usability-test">Usability Test</h2>
+
+<p>3 examiners needed: If possible, a person who has DJ or music software experience as an observer, a second observer, and a Wizard (performing Wizard of Oz techniques)</p>
+
+<p>Types of users needed: a person our age (more or less 5 years) who enjoys electronic music and has never used a DJ controller before.</p>
+
+
+
+<h3 id="usability-goals">Usability goals:</h3>
+
+<ul>
+<li>The user successfully completes at least 90% of the tasks without any external help.</li>
+<li>The user does not activate or deactivate any controls by accident.</li>
+<li>The user does not do anything to “ruin” the sound throughout the whole test session. (The meaning of “ruining the sound” is left to the examiners to judge, and will be reported in the “Usability Test Script and Evaluation” document). </li>
+<li>The controls are intuitive (the user properly uses the control in his/her first try).</li>
+<li>The user finds the system easy to use.</li>
+<li>The user learns how to use all the functions of the system in 30-45mins.</li>
+</ul>
+
+
+
+<h3 id="general-result-expectations">General result expectations:</h3>
+
+<p><strong>Best-case: </strong> <br>
+- Users are able to complete all the tasks without a problem. <br>
+- By the end of the test session users are able to use the whole system without any help. <br>
+- User enjoyed using the system and would use it again. </p>
+
+<p><strong>Worst-case: </strong> <br>
+- The FX unit is confusing and user can not get the hang of how to use it.  <br>
+- Users don’t use crossfader to segue between songs (they use the volume instead). <br>
+- The sound of their set doesn’t flow well (there are lots of interruptions and “bad” sounds). <br>
+- Users are overall confused with the system and don’t seem willing to continue using it or use it again.</p>
+
+
+
+<h3 id="how-will-the-results-affect-the-next-phase">How will the results affect the next phase?</h3>
+
+<p>The hardware choices we have made are final, unless something very crucial is discovered at this point, which we don’t expect will happen. What could change at this point is anything related to layout. The spacing between certain buttons might change (if some things were pressed/changed by accident, for example), or the spacing between sections (if they are too cluttered). We might change the ordering of the middle sections or the side sections, if results determine that common and liked workflows favor a different layout. For example, they might determine that the volume/crossfader should go above the library. </p>
+
+
+
+<h3 id="documents-for-usability-test">Documents for Usability Test</h3>
+
+<ul>
+<li><a href="https://docs.google.com/document/d/1eR0KmsteJHQBzvjVnjTCZmvEBZ2MO8I0VtpxLhpF7aw/edit?usp=sharing">Examiner Instructions</a></li>
+<li><a href="https://docs.google.com/document/d/1V-PnX-d7mXe-zbRt2CmebQfJ5yWwjHyZEcj777gaTNQ/edit?usp=sharing">Equipment Setup</a></li>
+<li><a href="https://docs.google.com/document/d/1roM7Ihxx0gh2rTJWzVKKPVpUHHhPhXDEJ85aYhF7_y4/edit?usp=sharing">General Testing Guidelines</a></li>
+<li><a href="https://docs.google.com/document/d/1csmqFqk4Dg71mXQpuEcyKnqj31iV30jR5riaMqdxyhE/edit?usp=sharing">Wizard of Oz</a></li>
+<li><a href="https://docs.google.com/document/d/1cXnGUa4eo2xcq94VucVKgD8PTUJIliBAWl4zu-xa45Q/edit?usp=sharing">User Manual</a></li>
+<li><a href="https://docs.google.com/document/d/1hdldq0joOOTrxytf62bigp2KbzHodwt3dyZu31yaC_o/edit?usp=sharing">User Introduction</a></li>
+<li><a href="https://docs.google.com/document/d/19PFfClgkGhhAZ5PAiGrfk0p6dFCjyrW6Vc8C1tddbBk/edit?usp=sharing">Consent Form</a></li>
+<li><a href="https://docs.google.com/document/d/16MjykYNpVADyt4PU-_vzaUA0Mu297PBiataoqKzBH70/edit?usp=sharing">Pre-Test Questionnaire</a></li>
+<li><a href="https://docs.google.com/document/d/1WnuAb04lpU8CGVp4cP2vmsWs6v1DLLVtGYrJqaDtqmc/edit?usp=sharing">Post-Test Questionnaire</a></li>
+<li><a href="https://docs.google.com/document/d/1ManSds8t-nti_e8GXc_9Vj1I-0AHMUYnOBcKXRSAzbg/edit?usp=sharing">Test Script</a></li>
+</ul>
+
+<hr>
+
+<h2 id="heuristic-evaluation-guidelines">Heuristic Evaluation Guidelines</h2>
+
+<p>The following suggestions are meant to help you guide your evaluation of the HCIDJ platform. You are welcome to use them wholesale, to disregard them and create your own set of criteria, or to come up with some combination of the two.</p>
+
+<p><strong>Clarity:</strong></p>
+
+<ul>
+<li>Individual functions are easy to locate.</li>
+<li>From the visual representation of a control, it is easy to figure out its  associated function.</li>
+<li>The first-time user is not overwhelmed with information.</li>
+</ul>
+
+<p><strong>Intuitiveness:</strong></p>
+
+<ul>
+<li>It is straightforward to translate thought to action.</li>
+<li>The movements and actions represent well the functions they are associated to.</li>
+</ul>
+
+<p><strong>Flexibility:</strong></p>
+
+<ul>
+<li>The system affords the user freedom to do interesting things.</li>
+<li>It is quickly decidable to the new user whether a particular action is possible or not.</li>
+<li>Little frustration is experienced in the usage of the controller.</li>
+</ul>
+
+<p><strong>Simplicity of Design: </strong></p>
+
+<ul>
+<li>The layout and grouping of the controls helps conceptualizing their functions.</li>
+<li>The user interface feels minimalist - in the sense that nothing is superfluous.</li>
+</ul>
+
+<p><strong>Visibility of labels and symbols: </strong></p>
+
+<ul>
+<li>The pictograms and text used are eye-catching and clearly describe the user interface.</li>
+<li>The pictograms used are familiar and represent what they intuitively should.</li>
+<li>There is no superfluous text; there is no missing text.</li>
+</ul>
+
+<p><strong>Error prevention:</strong></p>
+
+<ul>
+<li>The user interface does not suggest or emphasize courses of action that would lead to undesirable outcomes.</li>
+<li>If the user accidentally messes up, he can quickly figure out how to resolve his mistake.</li>
+</ul>
+
+<p><strong>User Manual:</strong></p>
+
+<ul>
+<li>The user manual is short, clear and interesting; it does not discourage the first time reader.</li>
+<li>The user manual is sufficient for the user to learn how to use the system without external help. </li>
+</ul>
+
+<hr>		
+
+<h2 id="summary-of-contributions">Summary of Contributions</h2>
+<p><strong>User Manual:</strong> Voula <br>
+<strong>Prototype chassis:</strong> Carl and Voula<br>
+<strong>System wiring and programming:</strong> Carl and Yamen<br>
+<strong>Usability testing:</strong>Voula and Yamen<br>
+<strong>Heuristic Guidelines:</strong> Carl <br>
+<strong>Webmaster:</strong> Yamen </p>
+
+
+  </body>
+</html>
