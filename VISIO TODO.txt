@@ -23,6 +23,7 @@
 
 - Increase hole sizes for small button grids (too tight, should be at least 12mm instead of 10mm)
 - Move labels to sides of button grids, or figure out a way we can laser engrave the silicone buttons (harder, but MUCH nicer looking)
+- Find a way to screw the two types of button grids to the chassis
 
 - Get measurements for LED sticks (go to the workshop and ask for a caliper). Make sure to get the screw holes.
 - Cut big square PCB and silicon cover at workshop for select buttons. (3x1 button grids yeee)
