@@ -1,4 +1,4 @@
-- Resize the work area to 24"x18", with 0.25" margins on each side.
+DONE - Resize the work area to 24"x18", with 0.25" margins on each side.
 
 - Add 5mm RGB LED for recording and 5mm RGB LED for battery
 - Get diffused LEDs for square buttons (this can wait)
@@ -9,11 +9,11 @@
 
 - Fix screw hole size for pressure strip - they are currently too large.
 - Cut backing piece for pressure strip - this should be cut out of a panel.
-- Widen holes for pressure strip - an index fingertip should fit in sideways.
+DONE - Widen holes for pressure strip - an index fingertip should fit in sideways.
 
-- Fix screw alignment for large sliders - the holes are too far from each other.
-- Shorten large slider hole - the length I got from the datasheet was either misread or plain wrong. (See X-Large slider on sparkfun)
-- Fix label lines on all sliders. Right now, they go from one end of the slider hole to the other, but they should be shortened by half the width of the slider knob's stem.
+CHECK - Fix screw alignment for large sliders - the holes are too far from each other.
+CHECK - Shorten large slider hole - the length I got from the datasheet was either misread or plain wrong. (See X-Large slider on sparkfun)
+DONE - Fix label lines on all sliders. Right now, they go from one end of the slider hole to the other, but they should be shortened by half the width of the slider knob's stem.
 - Adjust slider width to fit knob - not sure why I wrote this.
 - Triple-check screw hole sizes. Each hole should be exactly the size of the major diameter of the screw.
 - Switch out LO/MID/HI for BASS/MID/TREBLE
@@ -28,6 +28,9 @@
 - Get measurements for LED sticks (go to the workshop and ask for a caliper). Make sure to get the screw holes.
 - Cut big square PCB and silicon cover at workshop for select buttons. (3x1 button grids yeee)
 - Figure out screw lengths and washers (make a BOM)
+
+- Solder wires connecting the two small grids on each side
+- Solder wires connecting A0, A1, A2 pads on small grids to give them addresses
 
 MISSING PARTS
 - 74HC595 for multiplexing LEDs, or any other shift register with serial input and parallel output.
