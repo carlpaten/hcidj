@@ -1,3 +1,5 @@
+- Resize the work area to 24"x18", with 0.25" margins on each side.
+
 - Add 5mm RGB LED for recording and 5mm RGB LED for battery
 - Get diffused LEDs for square buttons (this can wait)
 - Add screw holes for chassis; they should be spread out in such a way that putting weight on the controller won't crack the panel.
@@ -13,7 +15,7 @@
 - Shorten large slider hole - the length I got from the datasheet was either misread or plain wrong. (See X-Large slider on sparkfun)
 - Fix label lines on all sliders. Right now, they go from one end of the slider hole to the other, but they should be shortened by half the width of the slider knob's stem.
 - Adjust slider width to fit knob - not sure why I wrote this.
-- Triple-check screw hole sizes. 
+- Triple-check screw hole sizes. Each hole should be exactly the size of the major diameter of the screw.
 - Switch out LO/MID/HI for BASS/MID/TREBLE
 
 - Space out knobs and buttons
@@ -23,7 +25,7 @@
 - Move labels to sides of button grids, or figure out a way we can laser engrave the silicone buttons (harder, but MUCH nicer looking)
 
 - Get measurements for LED sticks (go to the workshop and ask for a caliper). Make sure to get the screw holes.
-- Cut big square PCB at workshop for select buttons.
+- Cut big square PCB and silicon cover at workshop for select buttons. (3x1 button grids yeee)
 - Figure out screw lengths and washers (make a BOM)
 
 MISSING PARTS
