@@ -16,14 +16,15 @@ CHECK - Shorten large slider hole - the length I got from the datasheet was eith
 DONE - Fix label lines on all sliders. Right now, they go from one end of the slider hole to the other, but they should be shortened by half the width of the slider knob's stem.
 - Adjust slider width to fit knob - not sure why I wrote this.
 - Triple-check screw hole sizes. Each hole should be exactly the size of the major diameter of the screw.
-- Switch out LO/MID/HI for BASS/MID/TREBLE
 
-- Space out knobs and buttons
+LABELS
+- Fix label lines on all sliders. Right now, they go from one end of the slider hole to the other, but they should be shortened by half the width of the slider knob's stem.
 - Add label lines for knobs
 
 DONE - Increase hole sizes for small button grids (too tight, should be at least 12mm instead of 10mm)
 DONE - Move labels to sides of button grids, or figure out a way we can laser engrave the silicone buttons (harder, but MUCH nicer looking)
 - Find a way to screw the two types of button grids to the chassis
+- Cut backing piece for pressure strip - this should be cut out of a panel.
 
 - Get measurements for LED sticks (go to the workshop and ask for a caliper). Make sure to get the screw holes.
 - Cut big square PCB and silicon cover at workshop for select buttons. (3x1 button grids yeee)
