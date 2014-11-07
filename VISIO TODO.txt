@@ -28,8 +28,8 @@ DONE - Move labels to sides of button grids, or figure out a way we can laser en
 - Get measurements for LED sticks (go to the workshop and ask for a caliper). Make sure to get the screw holes.
 - Cut big square PCB and silicon cover at workshop for select buttons. (3x1 button grids yeee)
 - Figure out screw lengths and washers (make a BOM)
-	- Small slider needs 15mm stem + 4mm hole + 1mm washer + panel thickness, M2
-	- Large slider needs 14mm stem + 5mm hole + 1mm washer + panel thickness, M3
+	- Small slider needs 15mm stem + 4mm hole + 1mm washer + 1/4" panel thickness, M2
+	- Large slider needs 14mm stem + 5mm hole + 1mm washer + 1/4" panel thickness, M3
 
 - Solder wires connecting the two small grids on each side
 - Solder wires connecting A0, A1, A2 pads on small grids to give them addresses
