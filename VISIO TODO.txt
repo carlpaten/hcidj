@@ -1,29 +1,30 @@
-- Add recording and battery
-- Get diffused LEDs for square buttons
-- Place screw holes for chassis
-- Improve labelling for load buttons
-- Separate out encoders for music selection
+- Add 5mm RGB LED for recording and 5mm RGB LED for battery
+- Get diffused LEDs for square buttons (this can wait)
+- Add screw holes for chassis; they should be spread out in such a way that putting weight on the controller won't crack the panel.
+	- Put the screw holes on a separate layer; this way, when we print the back piece, we can just hide everything but the holes.
+- Improve labelling for load buttons (change to Load Song or something like that)
+- Separate out encoders for music selection. (This was a design suggestion, I don't remember why.)
 
-- Fix screw hole size for pressure strip
-- Cut backing piece for pressure strip
-- Widen holes for pressure strip
+- Fix screw hole size for pressure strip - they are currently too large.
+- Cut backing piece for pressure strip - this should be cut out of a panel.
+- Widen holes for pressure strip - an index fingertip should fit in sideways.
 
-- Fix screw alignment large slider
-- Shorten large slider hole
-- Fix lines on all sliders
-- Adjust slider width to fit knob
-- Triple-check screw hole sizes
+- Fix screw alignment for large sliders - the holes are too far from each other.
+- Shorten large slider hole - the length I got from the datasheet was either misread or plain wrong. (See X-Large slider on sparkfun)
+- Fix label lines on all sliders. Right now, they go from one end of the slider hole to the other, but they should be shortened by half the width of the slider knob's stem.
+- Adjust slider width to fit knob - not sure why I wrote this.
+- Triple-check screw hole sizes. 
 - Switch out LO/MID/HI for BASS/MID/TREBLE
 
 - Space out knobs and buttons
-- Lines for knobs
+- Add label lines for knobs
 
-- Increase holes for small button grids (too tight)
-- Move labels to sides of buttons
+- Increase hole sizes for small button grids (too tight, should be at least 12mm instead of 10mm)
+- Move labels to sides of button grids, or figure out a way we can laser engrave the silicone buttons (harder, but MUCH nicer looking)
 
-- Get measurements for LED sticks
-- Cut big square PCB at workshop
+- Get measurements for LED sticks (go to the workshop and ask for a caliper). Make sure to get the screw holes.
+- Cut big square PCB at workshop for select buttons.
 - Figure out screw lengths and washers (make a BOM)
 
 MISSING PARTS
-- 74HC595 for multiplexing LEDs
+- 74HC595 for multiplexing LEDs, or any other shift register with serial input and parallel output.
