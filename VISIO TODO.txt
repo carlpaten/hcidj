@@ -1,33 +1,23 @@
-- Resize the work area to 24"x18", with 0.25" margins on each side.
-
+HOLES
 - Add 5mm RGB LED for recording and 5mm RGB LED for battery
-- Get diffused LEDs for square buttons (this can wait)
-- Add screw holes for chassis; they should be spread out in such a way that putting weight on the controller won't crack the panel.
-	- Put the screw holes on a separate layer; this way, when we print the back piece, we can just hide everything but the holes.
-- Improve labelling for load buttons (change to Load Song or something like that)
-- Separate out encoders for music selection. (This was a design suggestion, I don't remember why.)
-
-- Fix screw hole size for pressure strip - they are currently too large.
-- Cut backing piece for pressure strip - this should be cut out of a panel.
-- Widen holes for pressure strip - an index fingertip should fit in sideways.
-
-- Fix screw alignment for large sliders - the holes are too far from each other.
+- Get measurements for LED sticks (go to the workshop and ask for a caliper). Make sure to get the screw holes.
 - Shorten large slider hole - the length I got from the datasheet was either misread or plain wrong. (See X-Large slider on sparkfun)
-- Fix label lines on all sliders. Right now, they go from one end of the slider hole to the other, but they should be shortened by half the width of the slider knob's stem.
-- Adjust slider width to fit knob - not sure why I wrote this.
+- Adjust slider width to fit knob (knob kind of pops out right now).
+- Fix screw alignment for large sliders - the holes are too far from each other.
+- Figure out screw lengths and washers (make a BOM)
+- Add screw holes for chassis; they should be spread out in such a way that putting weight on the controller won't crack the panel. 
+	- Put the screw holes on a separate layer; this way, when we print the back piece, we can just hide everything but the holes
 - Triple-check screw hole sizes. Each hole should be exactly the size of the major diameter of the screw.
-- Switch out LO/MID/HI for BASS/MID/TREBLE
 
-- Space out knobs and buttons
+LABELS
+- Fix label lines on all sliders. Right now, they go from one end of the slider hole to the other, but they should be shortened by half the width of the slider knob's stem.
 - Add label lines for knobs
 
-- Increase hole sizes for small button grids (too tight, should be at least 12mm instead of 10mm)
-- Move labels to sides of button grids, or figure out a way we can laser engrave the silicone buttons (harder, but MUCH nicer looking)
-- Find a way to screw the two types of button grids to the chassis
-
-- Get measurements for LED sticks (go to the workshop and ask for a caliper). Make sure to get the screw holes.
+OTHER CUTTING
 - Cut big square PCB and silicon cover at workshop for select buttons. (3x1 button grids yeee)
-- Figure out screw lengths and washers (make a BOM)
+- Find a way to screw the two types of button grids to the chassis
+- Cut backing piece for pressure strip - this should be cut out of a panel.
+
 
 MISSING PARTS
 - 74HC595 for multiplexing LEDs, or any other shift register with serial input and parallel output.
