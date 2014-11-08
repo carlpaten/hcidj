@@ -5,7 +5,7 @@ DONE - Resize the work area to 24"x18", with 0.25" margins on each side.
 - Add screw holes for chassis; they should be spread out in such a way that putting weight on the controller won't crack the panel.
 	- Put the screw holes on a separate layer; this way, when we print the back piece, we can just hide everything but the holes.
 - Improve labelling for load buttons (change to Load Song or something like that)
-- Separate out encoders for music selection. (This was a design suggestion, I don't remember why.)
+DONE - Separate out encoders for music selection. (This was a design suggestion, I don't remember why.)
 
 - Fix screw hole size for pressure strip - they are currently too large.
 - Cut backing piece for pressure strip - this should be cut out of a panel.
@@ -13,12 +13,10 @@ DONE - Widen holes for pressure strip - an index fingertip should fit in sideway
 
 CHECK - Fix screw alignment for large sliders - the holes are too far from each other.
 CHECK - Shorten large slider hole - the length I got from the datasheet was either misread or plain wrong. (See X-Large slider on sparkfun)
-DONE - Fix label lines on all sliders. Right now, they go from one end of the slider hole to the other, but they should be shortened by half the width of the slider knob's stem.
-- Adjust slider width to fit knob - not sure why I wrote this.
-- Triple-check screw hole sizes. Each hole should be exactly the size of the major diameter of the screw.
+CHECK - Triple-check screw hole sizes. Each hole should be exactly the size of the major diameter of the screw.
 
 LABELS
-- Fix label lines on all sliders. Right now, they go from one end of the slider hole to the other, but they should be shortened by half the width of the slider knob's stem.
+DONE - Fix label lines on all sliders. Right now, they go from one end of the slider hole to the other, but they should be shortened by half the width of the slider knob's stem.
 - Add label lines for knobs
 
 DONE - Increase hole sizes for small button grids (too tight, should be at least 12mm instead of 10mm)
