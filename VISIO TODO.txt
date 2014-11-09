@@ -1,35 +1,23 @@
-DONE - Resize the work area to 24"x18", with 0.25" margins on each side.
-DONE - Add 5mm RGB LED for recording and 5mm RGB LED for battery
-- Get diffused LEDs for square buttons (this can wait)
-DONE - Add screw holes for chassis; they should be spread out in such a way that putting weight on the controller won't crack the panel.
-DONE - Put the screw holes on a separate layer; this way, when we print the back piece, we can just hide everything but the holes.
-DONE - Improve labelling for load buttons (change to Load Song or something like that)
-DONE - Separate out encoders for music selection. (This was a design suggestion, I don't remember why.)
+VISIO:
+- FX unit: we think that the “select” functionality should be better labeled and separated from the knobs+buttons (“using” functionality). 
+	-maybe remove the second set of arrows, and make the first set of arrows undirected (just lines). 
+	-add the word “select” somewhere
+	-basically make it look more obvious for the user (what button does what)
+- Fix left FX (fx1,2,3) labels
+- Fix left and right “filter” labels
+- Put space between REC LED and label
+- Fix left and right “TREBLE” labels
+- Add “L” and “R” labels for cue buttons
 
-DONE - Fix screw hole size for pressure strip - they are currently too large.
+
+DONE? - Get diffused LEDs for square buttons
 - Cut backing piece for pressure strip - this should be cut out of a panel.
-DONE - Widen holes for pressure strip - an index fingertip should fit in sideways.
+- Cut big square PCB and silicon cover at workshop for select buttons. (cut to 4x2)
 
-CHECK - Fix screw alignment for large sliders - the holes are too far from each other.
-CHECK - Shorten large slider hole - the length I got from the datasheet was either misread or plain wrong. (See X-Large slider on sparkfun)
 CHECK - Triple-check screw hole sizes. Each hole should be exactly the size of the major diameter of the screw.
-
-LABELS
-DONE - Fix label lines on all sliders. Right now, they go from one end of the slider hole to the other, but they should be shortened by half the width of the slider knob's stem.
-DONE - Add label lines for knobs
-
-DONE - Increase hole sizes for small button grids (too tight, should be at least 12mm instead of 10mm)
-DONE - Move labels to sides of button grids, or figure out a way we can laser engrave the silicone buttons (harder, but MUCH nicer looking)
-DONE - Find a way to screw the two types of button grids to the chassis
-
-DONE - Get measurements for LED sticks (go to the workshop and ask for a caliper). Make sure to get the screw holes.
-- Cut big square PCB and silicon cover at workshop for select buttons. (3x1 button grids yeee)
-DONE - Figure out screw lengths and washers (make a BOM)
+- screw lengths and washers (make a BOM):
 	- Small slider needs 15mm stem + 4mm hole + 1mm washer + 1/4" panel thickness, M2
 	- Large slider needs 14mm stem + 5mm hole + 1mm washer + 1/4" panel thickness, M3
-
-- Solder wires connecting the two small grids on each side
-- Solder wires connecting A0, A1, A2 pads on small grids to give them addresses
 
 MISSING PARTS
 - 74HC595 for multiplexing LEDs, or any other shift register with serial input and parallel output.
