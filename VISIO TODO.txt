@@ -18,6 +18,8 @@ CHECK - Triple-check screw hole sizes. Each hole should be exactly the size of t
 - screw lengths and washers (make a BOM):
 	- Small slider needs 15mm stem + 4mm hole + 1mm washer + 1/4" panel thickness, M2
 	- Large slider needs 14mm stem + 5mm hole + 1mm washer + 1/4" panel thickness, M3
+	- LED stick needs 1mm washer + 1/4 inch panel thickness + nut, M2
+	- and button grids need screws too
 
 MISSING PARTS
 - 74HC595 for multiplexing LEDs, or any other shift register with serial input and parallel output.
