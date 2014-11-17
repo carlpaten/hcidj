@@ -1,4 +1,4 @@
-
+/*
 class ic4051_portc : public ic4051 {
   //Not sure what pins this writes to?
   void write_address(int addr) {
@@ -13,3 +13,4 @@ class ic4051_portc : public ic4051 {
       DDRC |= B11100000;
     }
 };
+*/

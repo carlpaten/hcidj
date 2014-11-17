@@ -1,3 +1,5 @@
+/*
+
 #include "types.h"
 #include <Wire.h>
 #include "Adafruit_Trellis.h"
@@ -51,3 +53,5 @@ class Trellis {
       trellis->writeDisplay();
     };
 };
+
+*/

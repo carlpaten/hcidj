@@ -1,5 +1,6 @@
 #include "types.h"
 
+/*
 class ic4051 {
   public:
     static const int inputs = 8;
@@ -29,3 +30,5 @@ class ic4051 {
       }
     }
 };
+
+*/

@@ -1,3 +1,5 @@
+- Measure slider knob stem dimensions and fix labels
+
 VISIO:
 - FX unit: we think that the “select” functionality should be better labeled and separated from the knobs+buttons (“using” functionality). 
 	-maybe remove the second set of arrows, and make the first set of arrows undirected (just lines). 

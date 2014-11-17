@@ -1,14 +1,14 @@
-/*
-
 #include "types.h"
 
+#ifndef IC595
+#define IC595
+
+template<int chained>
 class ic595 {
-  public:
-    static const int outputs = 32;
-    
   private:
+	static const int outputs = chained * 8;
     const pin send_pin, shift_pin, apply_pin;
-    bool state[outputs];
+    std::bitset<chained * 8> state;
     
     void applyUpdate() {
       for(int i = 0; i < outputs; i++) {
@@ -33,17 +33,6 @@ class ic595 {
         applyUpdate();
       }
     };
-    
-    void update(bool newState[outputs]){
-      bool shouldUpdate = false;
-      for(int i = 0; i < outputs; i++) {
-        if(state[i] != newState[i]) {
-          state[i] = newState[i];
-          shouldUpdate = true;
-        }
-      }
-      if(shouldUpdate) applyUpdate();
-    };
 };
 
-*/
+#endif
